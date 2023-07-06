@@ -1,0 +1,1 @@
+This project is to make me understand better the permissions in shell
