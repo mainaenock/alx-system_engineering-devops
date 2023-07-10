@@ -1,0 +1,1 @@
+This project is to help me better understand the shell redirections and special characters
