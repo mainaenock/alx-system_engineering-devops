@@ -1,0 +1,23 @@
+total 64
+drwxr-xr-x 2 root root 4096 Jul 10 14:40 .
+drwxr-xr-x 7 root root  176 Jul 10 12:22 ..
+-rwxr--r-- 1 root root   32 Jul 10 12:36 0-hello_world
+-rwxr--r-- 1 root root   12 Jul 10 12:29 0-hello_world~
+-rwxr--r-- 1 root root   28 Jul 10 13:10 1-confused_smiley
+-rwxr--r-- 1 root root   29 Jul 10 12:41 1-confused_smiley~
+-rwxr--r-- 1 root root   28 Jul 10 13:12 2-hellofile
+-rwxr--r-- 1 root root   39 Jul 10 13:15 3-twofiles
+-rwxr--r-- 1 root root   35 Jul 10 13:27 4-lastlines
+-rwxr--r-- 1 root root   35 Jul 10 13:30 5-firstlines
+-rwxr--r-- 1 root root   46 Jul 10 13:42 6-third_line
+-rwxr--r-- 1 root root   98 Jul 10 14:30 7-file
+-rwxr--r-- 1 root root   76 Jul 10 13:52 7-file~
+-rwxr--r-- 1 root root   36 Jul 10 14:39 8-cwd_state
+-rw-r--r-- 1 root root   12 Jul 10 13:34 #iacta#
+lrwxrwxrwx 1 root root   21 Jul 10 13:33 .#iacta -> root@fa7cecbda2c3.389
+-rw-r--r-- 1 root root    0 Jul 10 13:43 iacta
+-rw-r--r-- 1 root root   20 Jul 10 14:37 #ls_cwd_content#
+-rw-r--r-- 1 root root    0 Jul 10 14:40 ls_cwd_content
+-rw-r--r-- 1 root root   90 Jul 10 12:26 README.md
+-rw-r--r-- 1 root root    0 Jul 10 12:24 README.md~
+-rw-r--r-- 1 root root    0 Jul 10 13:01 smile~
