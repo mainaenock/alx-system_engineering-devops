@@ -3,6 +3,7 @@
 num=1
 while [ $num -le 20 ];
 do
+	echo "$num"
 	case $num in
 		4)
 			echo "$num"
@@ -15,9 +16,6 @@ do
 		17)
 			echo "$num"
 			echo "badluck from Italy"
-			;;
-		*)
-			echo "$num"
 			;;
 	esac
 	num=$((num+1))
