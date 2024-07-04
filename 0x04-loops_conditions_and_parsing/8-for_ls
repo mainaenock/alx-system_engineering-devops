@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#listing files
+for file in *; do
+    if [[ ! "$file" =~ ^\. ]]; then
+        name_after_dash=$(echo "$file" | cut -d '-' -f 2-)
+        echo "$name_after_dash"
+    fi
+done
+
