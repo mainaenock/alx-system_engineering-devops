@@ -5,15 +5,15 @@ while [ $num -le 20 ];
 do
 	case $num in
 		4)
-			echo "4"
+			echo "$num"
 			echo "bad luck from china"
 			;;
 		9)
-			echo "9"
+			echo "$num"
 			echo "bad luck from Japan"
 			;;
 		17)
-			echo "17"
+			echo "$num"
 			echo "badluck from Italy"
 			;;
 		*)
