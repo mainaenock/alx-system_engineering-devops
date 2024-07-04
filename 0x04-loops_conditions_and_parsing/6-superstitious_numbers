@@ -15,7 +15,7 @@ do
 			;;
 		17)
 			echo "$num"
-			echo "badluck from Italy"
+			echo "bad luck from Italy"
 			;;
 	esac
 	num=$((num+1))
