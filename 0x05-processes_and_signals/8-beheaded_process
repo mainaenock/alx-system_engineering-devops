@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#using pkill
+
+pkill -SIGKILL -f "7-highlander"
