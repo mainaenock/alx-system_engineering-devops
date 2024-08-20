@@ -1,19 +1,35 @@
 #!/usr/bin/env bash
-# Usage: ./1-world_wide_web <domain> <subdomain>
-# Display information about subdomains.
+# script to check domain configurations
+# shellcheck disable=SC2086
 
-domain_information () {
-    line=$(dig "$2"."$1" | grep -A1 'ANSWER SECTION:' | tr '\t' '\n' | tail -2 | tr '\n' ' ')
-    echo "$2 $line" | awk '{print "The subdomain " $1 " is a " $2 " record and points to " $3}'
+display_info() {
+        subdomain=$1
+        record_type=$2
+        destination=$3
+        echo "The subdomain $subdomain is a $record_type record and points to $destination"
 }
 
-if [ "$#" == 1 ]
-then
-  domain_information "$1" "www"
-  domain_information "$1" "lb-01"
-  domain_information "$1" "web-01"
-  domain_information "$1" "web-02"
-elif [ "$#" == 2 ]
-then
-  domain_information "$1" "$2"
+# Function to get the DNS information for a subdomain
+get_dns_info() {
+        domain=$1
+        subdomain=$2
+        dig +short "$subdomain.$domain"
+}
+
+# main script
+domain=$1
+subdomain=$2
+
+subdomains=("www" "lb-01" "web-01" "web-02")
+
+if [ -z "$subdomain" ]; then
+        for sub in "${subdomains[@]}"; do
+                result=$(get_dns_info "$domain" "$sub")
+                display_info "$sub" "A" "$result"
+        done
+else
+        # Display info for the specified domain
+        result=$(get_dns_info "$domain" "$subdomain")
+        display_info "$subdomain" "A" "$result"
 fi
+
